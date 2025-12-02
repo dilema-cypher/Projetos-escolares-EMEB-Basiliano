@@ -150,12 +150,11 @@ export default function StackCarousel() {
                         </div>
 
                         {/* IMAGE */}
-                        <Image
+                        <img
                           src={images[idx]}
                           alt="slide"
-                          fill
                           loading="eager"
-                          className="object-cover rounded-3xl"
+                          className="absolute inset-0 w-full h-full object-cover rounded-3xl"
                         />
 
                         {/* OVERLAY */}
