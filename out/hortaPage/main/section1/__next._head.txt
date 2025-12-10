@@ -1,0 +1,8 @@
+1:"$Sreact.fragment"
+2:I[97367,["/_next/static/chunks/42879de7b8087bc9.js"],"ViewportBoundary"]
+4:I[97367,["/_next/static/chunks/42879de7b8087bc9.js"],"MetadataBoundary"]
+5:"$Sreact.suspense"
+7:I[27201,["/_next/static/chunks/42879de7b8087bc9.js"],"IconMark"]
+0:{"buildId":"EIAxuq6CEhWN5x6sN6e80","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],null]}],"loading":null,"isPartial":false}
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+6:[["$","title","0",{"children":"Horta comunitaria EMEB Basiliano do Carmo de jesus edital"}],["$","meta","1",{"name":"description","content":"Site voltado a promoção do projeto horta comunitaria EMEB Basiliano, Um projeto educativo em que as crianças cultivam, aprendem e compartilham."}],["$","meta","2",{"name":"application-name","content":"name:'Horta comunitaria sinop/mt'"}],["$","link","3",{"rel":"author","href":"https://github.com/dilema-cypher"}],["$","meta","4",{"name":"author","content":"Marcos silva"}],["$","meta","5",{"name":"author","content":"Inaja Maringues da Silva Chiarelli"}],["$","meta","6",{"name":"generator","content":"nextJS, Tailwind"}],["$","meta","7",{"name":"keywords","content":"projeto escolar,EMEB Basiliano,escola sinop,Inaja Maringues da Silva Chiarelli"}],["$","meta","8",{"name":"robots","content":"index, follow"}],["$","link","9",{"rel":"icon","href":"/favicon.ico?favicon.0b3bf435.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L7","10",{}]]

@@ -1,0 +1,8 @@
+1:"$Sreact.fragment"
+2:I[72338,["/_next/static/chunks/6e4038cffb877d14.js","/_next/static/chunks/4ac78dd452a8a7e2.js","/_next/static/chunks/d60fe47d56a0229e.js"],"default"]
+3:I[24802,["/_next/static/chunks/6e4038cffb877d14.js","/_next/static/chunks/4ac78dd452a8a7e2.js","/_next/static/chunks/d60fe47d56a0229e.js"],"default"]
+4:I[65392,["/_next/static/chunks/6e4038cffb877d14.js","/_next/static/chunks/4ac78dd452a8a7e2.js","/_next/static/chunks/d60fe47d56a0229e.js"],"default"]
+5:I[97367,["/_next/static/chunks/42879de7b8087bc9.js"],"OutletBoundary"]
+6:"$Sreact.suspense"
+0:{"buildId":"EIAxuq6CEhWN5x6sN6e80","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"bg-linear-to-r from-[#ffffff] via-[#e0f7fa] to-[#b1eaf2] ","children":[["$","div",null,{"className":"bg-linear-to-r from-[#ffffff] via-[#e0f7fa] to-[#b1eaf2] shadow-[0_12px_25px_rgba(0,0,0,0.25)] relative z-40","children":["$","section",null,{"className":"py-11 ","children":[["$","h2",null,{"className":"text-[20px] p-2 font-bold text-center mb-8 bg-linear-to-r from-lime-400 to-lime-500 rounded","children":"Nossas Crianças em Ação 👩‍🌾"}],["$","$L2",null,{}]]}]}],["$","div",null,{"className":"bg-linear-to-r from-[#ffffff] via-[#f0f0f0] to-[#e0e0e0] shadow-[0_12px_25px_rgba(0,0,0,0.25)] relative z-40","children":["$","$L3",null,{}]}],["$","div",null,{"className":"bg-linear-to-r from-[#ffffff] via-[#e0f7fa] to-[#b1eaf2] ","children":["$","$L4",null,{}]}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/d60fe47d56a0229e.js","async":true}]],["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"loading":null,"isPartial":false}
+7:null

@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[72338,["/_next/static/chunks/6e4038cffb877d14.js","/_next/static/chunks/4ac78dd452a8a7e2.js","/_next/static/chunks/87e637e1b598720e.js"],"default"]
+3:I[97367,["/_next/static/chunks/42879de7b8087bc9.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"EIAxuq6CEhWN5x6sN6e80","rsc":["$","$1","c",{"children":[["$","section",null,{"className":"py-11 ","children":[["$","h2",null,{"className":"text-[20px] p-2 font-bold text-center mb-8 bg-linear-to-r from-lime-400 to-lime-500 rounded","children":"Nossas Crianças em Ação 👩‍🌾"}],["$","$L2",null,{}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/87e637e1b598720e.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null
