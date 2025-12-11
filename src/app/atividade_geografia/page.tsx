@@ -1,7 +1,7 @@
 import { MapPin, Trees, Building2, Palette } from "lucide-react";
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
 import { ConceptCard } from "./components/ConceptCard";
-import { StudentWork } from "./components/StudentWork";
+import StudentWork from "./components/StudentWork";
 
 function App() {
   const studentWorks = [
@@ -10,8 +10,7 @@ function App() {
       studentName: "Ana Silva",
       title: "Floresta Amazônica",
       type: "natural",
-      imageUrl:
-        "https://images.unsplash.com/photo-1620872619814-4fa5a3edd549?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwYXJ0JTIwbmF0dXJlfGVufDF8fHx8MTc2NTMxOTQ4MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      imageUrl: "imgs/imgsProjects_geografia/imgGeografia (1).jpeg",
       description: "Desenhei árvores grandes e muitos animais da floresta",
     },
     {
@@ -103,11 +102,8 @@ function App() {
             explorando os dois tipos de paisagens!
           </p>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6">
-            {studentWorks.map((work) => (
-              <StudentWork key={work.id} work={work} />
-            ))}
-          </div>
+              <StudentWork />
+            
         </div>
       </section>
     </div>
