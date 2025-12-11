@@ -41,7 +41,6 @@ export default function Page() {
       icon: Mountain,
       color: "bg-amber-500",
     },
-    
   ];
 
   return (
@@ -101,7 +100,7 @@ export default function Page() {
             {/* Image Side */}
             <div className="relative h-64 md:h-full min-h-[400px]">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80"
+                src="imgs/autoraImg.jpeg"
                 alt="Inaja Maringues"
                 className="w-full h-full object-cover"
               />
@@ -113,7 +112,9 @@ export default function Page() {
               <div className="inline-block bg-green-100 text-green-700 px-4 py-2 rounded-full mb-4">
                 Autora
               </div>
-              <h2 className="text-green-800 mb-4">Inaja Maringues</h2>
+              <h2 className="text-green-800 mb-4">
+                Inaja Maringues da Silva Chiarelli
+              </h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Educadora apaixonada por transformar a sala de aula em um espaço
                 de descobertas e aprendizado significativo. Com anos de
