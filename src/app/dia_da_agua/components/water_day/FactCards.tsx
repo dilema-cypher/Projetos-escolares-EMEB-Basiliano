@@ -9,13 +9,13 @@ const facts = [
   },
   {
     id: 2,
-    title: "71% da Terra é água",
-    text: "Mas apenas uma pequena parte é potável.",
+    title: "A água cobre cerca de 70% da superfície da Terra",
+    text: "Mas apenas 3% é potável.",
     color: "cyan-300",
   },
   {
     id: 3,
-    title: "Economize água",
+    title: "Consumo conciente",
     text: "Feche a torneira ao escovar os dentes.",
     color: "teal-300",
   },
@@ -25,6 +25,9 @@ export default function FactCards() {
   return (
     <section className="py-12 bg-blue-50">
       <div className="container mx-auto px-6">
+        <h2 className="text-4xl font-light text-center mb-5 text-blue-500">
+          Curiosidades
+        </h2>
         <div className="grid gap-6 grid-cols-1 md:grid-cols-3">
           {facts.map((f) => (
             <div

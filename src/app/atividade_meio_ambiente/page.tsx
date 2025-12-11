@@ -6,7 +6,6 @@ import { Activities } from './components/Activities';
 export default function App() {
   return (
     <div className="min-h-screen bg-linear-to-b from-green-50 to-white">
-      <Header />
       <Hero />
       <About />
       <Activities />

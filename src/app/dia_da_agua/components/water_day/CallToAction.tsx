@@ -7,7 +7,8 @@ export default function CallToAction() {
   ];
 
   return (
-    <section className="py-12 bg-linear-to-br from-teal-400 to-blue-500 text-white">
+    <section className="py-5 bg-linear-to-br from-teal-400 to-blue-500 text-white rounded-xl">
+      <h2 className="text-center text-4xl font-light mb-5">Ações que mudam o mundo</h2>
       <div className="container mx-auto px-6 grid md:grid-cols-4 gap-4">
         {tips.map((t, i) => (
           <div key={i} className="p-4 bg-white/10 backdrop-blur rounded shadow">

@@ -20,7 +20,7 @@ const data = [
     color: "text-green-500",
     bg: "bg-green-100",
     title: "Equipe Participante",
-    text: "Alunos do 5º ano A e B, orientados pelo professor responsável pelos projetos cientíﬁcos.",
+    text: "Alunos do 5º ano C e D, orientados pelo professor responsável pelos projetos cientíﬁcos.",
   },
   {
     icon: BookOpen,
@@ -39,7 +39,7 @@ export default function ProjectInfo() {
       </h1>
 
       <p className="text-center text-lg text-gray-600 mt-2 mb-10">
-        Turma: 5º Ano – 2025
+        Turmas: 5º Ano C - 5º Ano D
       </p>
 
       {/* GRID CARDS */}

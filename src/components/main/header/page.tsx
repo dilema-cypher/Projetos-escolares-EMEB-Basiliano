@@ -115,16 +115,7 @@ export default function Header() {
                   Atividades geografia
                   <Mountain className="text-white" />
                 </button>
-                <button
-                  className="px-4 py-2 rounded-lg font-bold 
-                  bg-linear-to-r from-lime-300 via-lime-400 to-green-500 cursor-pointer flex items-center justify-between"
-                  onClick={() => (
-                    navegar("./atividade_meio_ambiente/"), setOnPageHorta(false)
-                  )}
-                >
-                  Atividades Meio ambiente
-                  <Earth className="text-white" />
-                </button>
+                
               </div>
             </div>
           </SheetContent>

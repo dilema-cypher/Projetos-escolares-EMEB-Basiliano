@@ -1,38 +1,47 @@
-import { Apple, Microscope, Droplets, Mountain, Earth, BookOpen, Award, Heart, Lightbulb } from 'lucide-react';
-import { ImageWithFallback } from '@/components/figma/ImageWithFallback';
+import {
+  Apple,
+  Microscope,
+  Droplets,
+  Mountain,
+  Earth,
+  BookOpen,
+  Award,
+  Heart,
+  Lightbulb,
+} from "lucide-react";
+import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 
 export default function Page() {
   const projects = [
     {
-      title: 'Horta Escolar',
-      description: 'Projeto que promove o cultivo de alimentos orgânicos na escola, ensinando aos alunos sobre alimentação saudável, sustentabilidade e o ciclo de vida das plantas.',
+      title: "Horta Escolar",
+      description:
+        "Projeto que promove o cultivo de alimentos orgânicos na escola, ensinando aos alunos sobre alimentação saudável, sustentabilidade e o ciclo de vida das plantas.",
       icon: Apple,
-      color: 'bg-green-500'
+      color: "bg-green-500",
     },
     {
-      title: 'Projeto de Ciências',
-      description: 'Atividades práticas e experimentos que estimulam a curiosidade científica, desenvolvendo o pensamento crítico e a metodologia de investigação nos estudantes.',
+      title: "Projeto de Ciências",
+      description:
+        "Criação de maquetes e experimentos que estimulam a curiosidade científica, desenvolvendo o pensamento crítico e a metodologia de investigação nos estudantes.",
       icon: Microscope,
-      color: 'bg-purple-500'
+      color: "bg-purple-500",
     },
     {
-      title: 'Dia da Água',
-      description: 'Conscientização sobre a importância da preservação dos recursos hídricos através de atividades educativas, debates e práticas sustentáveis de uso da água.',
+      title: "Dia da Água",
+      description:
+        "Conscientização sobre a importância da preservação dos recursos hídricos através de atividades educativas, debates e práticas sustentáveis de uso da água.",
       icon: Droplets,
-      color: 'bg-blue-500'
+      color: "bg-blue-500",
     },
     {
-      title: 'Atividades Geografia',
-      description: 'Exploração do mundo através de mapas, estudos de relevo, clima e cultura, conectando os alunos com diferentes realidades geográficas e sociais.',
+      title: "Atividades Geografia",
+      description:
+        "Atividades que ajudam na compreensão dos elementos naturais e das ações humanas que transformam e organizam o espaço geográfico",
       icon: Mountain,
-      color: 'bg-amber-500'
+      color: "bg-amber-500",
     },
-    {
-      title: 'Atividades Meio Ambiente',
-      description: 'Projetos focados em educação ambiental, reciclagem, preservação da natureza e desenvolvimento de uma consciência ecológica nas novas gerações.',
-      icon: Earth,
-      color: 'bg-emerald-500'
-    }
+    
   ];
 
   return (
@@ -54,8 +63,9 @@ export default function Page() {
             Transformando Educação em Prática
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            Descubra projetos educacionais inovadores que conectam teoria e prática, 
-            promovendo uma aprendizagem significativa e sustentável para todos os alunos.
+            Descubra projetos educacionais inovadores que conectam teoria e
+            prática, promovendo uma aprendizagem significativa e sustentável
+            para todos os alunos.
           </p>
         </div>
 
@@ -64,14 +74,21 @@ export default function Page() {
           {projects.map((project, index) => {
             const Icon = project.icon;
             return (
-              <div key={index} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
+              <div
+                key={index}
+                className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group"
+              >
                 <div className={`${project.color} h-2 w-full`}></div>
                 <div className="p-6">
-                  <div className={`${project.color} w-14 h-14 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                  <div
+                    className={`${project.color} w-14 h-14 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}
+                  >
                     <Icon className="w-7 h-7 text-white" />
                   </div>
                   <h3 className="text-gray-800 mb-3">{project.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{project.description}</p>
+                  <p className="text-gray-600 leading-relaxed">
+                    {project.description}
+                  </p>
                 </div>
               </div>
             );
@@ -94,18 +111,21 @@ export default function Page() {
             {/* Content Side */}
             <div className="p-8 md:p-12">
               <div className="inline-block bg-green-100 text-green-700 px-4 py-2 rounded-full mb-4">
-                Sobre a Autora
+                Autora
               </div>
               <h2 className="text-green-800 mb-4">Inaja Maringues</h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Educadora apaixonada por transformar a sala de aula em um espaço de descobertas 
-                e aprendizado significativo. Com anos de experiência em educação ambiental e 
-                ciências, Inaja desenvolve projetos inovadores que conectam os estudantes com 
-                o mundo ao seu redor, promovendo consciência ambiental e pensamento crítico.
+                Educadora apaixonada por transformar a sala de aula em um espaço
+                de descobertas e aprendizado significativo. Com anos de
+                experiência em educação ambiental e ciências, desenvolvendo
+                projetos inovadores que conectam os estudantes com o mundo ao
+                seu redor, promovendo consciência ambiental e pensamento
+                crítico.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                Acredita que a educação é a ferramenta mais poderosa para criar um futuro 
-                sustentável e inspira seus alunos a serem agentes de mudança em suas comunidades.
+                Acredita que a educação é a ferramenta mais poderosa para criar
+                um futuro sustentável e inspira seus alunos a serem agentes de
+                mudança em suas comunidades.
               </p>
 
               {/* Highlights */}

@@ -7,9 +7,13 @@ export default function ProjectHistory() {
         <div className="bg-white rounded shadow p-6 border-t-8 border-cyan-400">
           <div className="flex items-center gap-3 mb-4">
             <Users className="w-6 h-6 text-cyan-500" />
-            <h3 className="text-xl font-semibold">Nossa História</h3>
+            <h3 className="text-xl font-semibold">Contexto das Atividades</h3>
           </div>
-          <p className="text-gray-700">Projeto criado por educadores locais.</p>
+          <p className="text-gray-700">
+            Trabalhar o Dia Mundial da Água é crucial para conscientizar a
+            sociedade sobre a gestão sustentável dos recursos hídricos e para
+            combater a crise hídrica global.
+          </p>
         </div>
       </div>
     </section>

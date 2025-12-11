@@ -12,7 +12,7 @@ export default function Hero() {
           <Droplet className="w-10 h-10 animate-bounce" aria-hidden />
         </div>
         <p className="max-w-2xl mx-auto text-lg sm:text-xl text-blue-50">
-          Um site educativo para crianças sobre a importância da água.
+          Criando Consciência e Promovendo Ações para a Preservação da Água
         </p>
       </div>
     </section>

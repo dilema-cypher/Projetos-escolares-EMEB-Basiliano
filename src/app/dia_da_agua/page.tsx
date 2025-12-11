@@ -19,23 +19,12 @@ export default function WaterDayPage() {
         </div>
       </section>
 
-      {/* SOBRE O PROJETO */}
-      <section className="py-16">
-        <div className="container mx-auto px-6">
-          <ProjectInfo />
-        </div>
-      </section>
 
       {/* NOSSA HISTÓRIA */}
       <section className="py-16">
         <div className="container mx-auto px-6">
           <ProjectHistory />
         </div>
-      </section>
-
-      {/* TIMELINE */}
-      <section className="py-16">
-        <Timeline />
       </section>
 
       {/* GALERIA / CARROSSEL */}
