@@ -12,20 +12,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
- 
   return (
     <html lang="pt-br">
       <body className={`antialiased`}>
-        <div className="bg-linear-to-r from-[#ffffff] via-[#e0f7fa] to-[#b1eaf2] overflow-x-hidden">
+        <div className="bg-linear-to-r from-[#ffffff] via-[#e0f7fa] to-[#b1eaf2] overflow-x-hidden pt-[220px]">
           {/* Banner */}
           <div>
             <div className="shadow-[0_12px_25px_rgba(0,0,0,0.25)] relative z-50">
               <Header></Header>
             </div>
 
-            <Delay>
-              {children}
-            </Delay>
+            <Delay>{children}</Delay>
             <div>
               <Footer></Footer>
             </div>
