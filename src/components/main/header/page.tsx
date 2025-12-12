@@ -24,7 +24,7 @@ import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [onpageHorta, setOnPageHorta] = useState<boolean>(false);
-  const [selectedBtn, setSelectedBtn] = useState<string>("");
+  const [open, setOpen] = useState<boolean>(false);
   const pathname = usePathname();
 
   console.log(pathname);
@@ -42,7 +42,7 @@ export default function Header() {
       />
 
       <div className="absolute left-4 top-4 z-50">
-        <Sheet>
+        <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
             <button className="cursor-pointer bg-white text-black px-3 py-1 rounded shadow">
               <Menu />
@@ -77,7 +77,9 @@ export default function Header() {
                        ? "bg-linear-to-r from-green-900 via-green-800 to-lime-700 text-white"
                        : "bg-linear-to-r from-lime-300 via-lime-400 to-green-500 text-green-900"
                    }`}
-                  onClick={() => (navegar("./"), setOnPageHorta(false))}
+                  onClick={() => (
+                    navegar("./"), setOnPageHorta(false), setOpen(false)
+                  )}
                 >
                   Pagina Inicial
                   <House className="text-white" />
@@ -92,7 +94,9 @@ export default function Header() {
                        : "bg-linear-to-r from-lime-300 via-lime-400 to-green-500 text-green-900"
                    }`}
                   onClick={() => (
-                    navegar("./hortaPage/"), setOnPageHorta(true)
+                    navegar("./hortaPage/"),
+                    setOnPageHorta(true),
+                    setOpen(false)
                   )}
                 >
                   Horta Escolar
@@ -107,7 +111,9 @@ export default function Header() {
                        : "bg-linear-to-r from-lime-300 via-lime-400 to-green-500 text-green-900"
                    }`}
                   onClick={() => (
-                    navegar("./projeto_ciencias/"), setOnPageHorta(false)
+                    navegar("./projeto_ciencias/"),
+                    setOnPageHorta(false),
+                    setOpen(false)
                   )}
                 >
                   Projeto de ciencias
@@ -123,7 +129,9 @@ export default function Header() {
                        : "bg-linear-to-r from-lime-300 via-lime-400 to-green-500 text-green-900"
                    }`}
                   onClick={() => (
-                    navegar("./dia_da_agua/"), setOnPageHorta(false)
+                    navegar("./dia_da_agua/"),
+                    setOnPageHorta(false),
+                    setOpen(false)
                   )}
                 >
                   Dia da agua
@@ -138,7 +146,9 @@ export default function Header() {
                        : "bg-linear-to-r from-lime-300 via-lime-400 to-green-500 text-green-900"
                    }`}
                   onClick={() => (
-                    navegar("./atividade_geografia/"), setOnPageHorta(false)
+                    navegar("./atividade_geografia/"),
+                    setOnPageHorta(false),
+                    setOpen(false)
                   )}
                 >
                   Atividades geografia
