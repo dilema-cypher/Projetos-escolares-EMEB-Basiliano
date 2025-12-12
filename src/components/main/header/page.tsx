@@ -20,10 +20,14 @@ import {
 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [onpageHorta, setOnPageHorta] = useState<boolean>(false);
+  const [selectedBtn, setSelectedBtn] = useState<string>("");
+  const pathname = usePathname();
 
+  console.log(pathname);
   const route = useRouter();
   const navegar = (local: string) => {
     route.push(local);
@@ -66,8 +70,13 @@ export default function Header() {
             >
               <div className="grid gap-3 w-full text-slate-900 p-2">
                 <button
-                  className=" px-4 py-2 rounded-lg font-bold 
-                  bg-linear-to-r from-lime-300 via-lime-400 to-green-500 cursor-pointer flex items-center justify-between"
+                  className={`px-4 py-2 rounded-lg font-bold 
+                   cursor-pointer flex items-center justify-between 
+                   ${
+                     pathname === "/"
+                       ? "bg-linear-to-r from-green-900 via-green-800 to-lime-700 text-white"
+                       : "bg-linear-to-r from-lime-300 via-lime-400 to-green-500 text-green-900"
+                   }`}
                   onClick={() => (navegar("./"), setOnPageHorta(false))}
                 >
                   Pagina Inicial
@@ -75,8 +84,13 @@ export default function Header() {
                 </button>
 
                 <button
-                  className="px-4 py-2 rounded-lg  font-bold 
-                  bg-linear-to-r from-lime-300 via-lime-400 to-green-500 cursor-pointer flex items-center justify-between"
+                  className={`px-4 py-2 rounded-lg font-bold 
+                   cursor-pointer flex items-center justify-between 
+                   ${
+                     pathname === "/hortaPage"
+                       ? "bg-linear-to-r from-green-900 via-green-800 to-lime-700 text-white"
+                       : "bg-linear-to-r from-lime-300 via-lime-400 to-green-500 text-green-900"
+                   }`}
                   onClick={() => (
                     navegar("./hortaPage/"), setOnPageHorta(true)
                   )}
@@ -85,8 +99,13 @@ export default function Header() {
                   <Apple className="text-white" />
                 </button>
                 <button
-                  className="px-4 py-2 rounded-lg font-bold 
-                  bg-linear-to-r from-lime-300 via-lime-400 to-green-500 cursor-pointer flex items-center justify-between"
+                  className={`px-4 py-2 rounded-lg font-bold 
+                   cursor-pointer flex items-center justify-between 
+                   ${
+                     pathname === "/projeto_ciencias"
+                       ? "bg-linear-to-r from-green-900 via-green-800 to-lime-700 text-white"
+                       : "bg-linear-to-r from-lime-300 via-lime-400 to-green-500 text-green-900"
+                   }`}
                   onClick={() => (
                     navegar("./projeto_ciencias/"), setOnPageHorta(false)
                   )}
@@ -96,8 +115,13 @@ export default function Header() {
                 </button>
 
                 <button
-                  className="px-4 py-2 rounded-lg font-bold 
-                  bg-linear-to-r from-lime-300 via-lime-400 to-green-500 cursor-pointer flex items-center justify-between"
+                  className={`px-4 py-2 rounded-lg font-bold 
+                   cursor-pointer flex items-center justify-between 
+                   ${
+                     pathname === "/dia_da_agua"
+                       ? "bg-linear-to-r from-green-900 via-green-800 to-lime-700 text-white"
+                       : "bg-linear-to-r from-lime-300 via-lime-400 to-green-500 text-green-900"
+                   }`}
                   onClick={() => (
                     navegar("./dia_da_agua/"), setOnPageHorta(false)
                   )}
@@ -106,8 +130,13 @@ export default function Header() {
                   <Droplets className="text-white" />
                 </button>
                 <button
-                  className="px-4 py-2 rounded-lg font-bold 
-                  bg-linear-to-r from-lime-300 via-lime-400 to-green-500 cursor-pointer flex items-center justify-between"
+                  className={`px-4 py-2 rounded-lg font-bold 
+                   cursor-pointer flex items-center justify-between 
+                   ${
+                     pathname === "/atividade_geografia"
+                       ? "bg-linear-to-r from-green-900 via-green-800 to-lime-700 text-white"
+                       : "bg-linear-to-r from-lime-300 via-lime-400 to-green-500 text-green-900"
+                   }`}
                   onClick={() => (
                     navegar("./atividade_geografia/"), setOnPageHorta(false)
                   )}
@@ -115,7 +144,6 @@ export default function Header() {
                   Atividades geografia
                   <Mountain className="text-white" />
                 </button>
-                
               </div>
             </div>
           </SheetContent>
