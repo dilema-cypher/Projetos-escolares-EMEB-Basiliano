@@ -102,7 +102,6 @@ export default function Header() {
                          h-[90vh] bg-white overflow-y-auto w-full"
             >
               <div className="grid gap-3 w-full text-slate-900 p-2">
-
                 {/* BOTÕES */}
                 <NavButton
                   label="Página Inicial"
@@ -174,9 +173,9 @@ export default function Header() {
           <p className="text-[10px] md:text-xl max-w-2xl mx-auto">
             Projeto escolar 2025 produzido por{" "}
             <b className="text-blue-900">Autor:</b> Profª Esp. Inajá Maringues
-            da Silva Chiarelli e{" "}
-            <b className="text-blue-900">Coautores:</b> Profº Me. Flávio Marcelo
-            Bueno de Castro e Profº Esp. Gilmar Antônio Frydriszewski
+            da Silva Chiarelli e <b className="text-blue-900">Coautores:</b>{" "}
+            Profº Me. Flávio Marcelo Bueno de Castro e Profº Esp. Gilmar Antônio
+            Frydriszewski
           </p>
         ) : (
           <p className="text-[10px] md:text-xl max-w-2xl mx-auto">
@@ -209,11 +208,11 @@ function NavButton({
       className={`
         px-4 py-2 rounded-lg font-bold 
         cursor-pointer flex items-center justify-between 
-        transition-all
+        transition duration-1000
         ${
           active
             ? "bg-linear-to-r from-green-900 via-green-800 to-lime-700 text-white"
-            : "bg-linear-to-r from-lime-300 via-lime-400 to-green-500 text-green-900"
+            : "bg-linear-to-r from-lime-300 via-lime-400 to-green-500 text-green-900 hover:from-green-500 hover:via-green-400 hover:to-lime-300"
         }
       `}
       onClick={action}
